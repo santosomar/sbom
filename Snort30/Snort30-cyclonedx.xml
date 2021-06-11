@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<bom serialNumber="urn:uuid:2423045c-297a-9bef-9c84-0bc6bc195b7d" 
+version = "1" xmlns="http://cyclonedx.org/schema/bom/1.2">
+	<metadata>
+	  <timestamp>2021-06-10T19:11:00Z</timestamp>
+	  <authors>
+	    <author>
+              <name>Omar Santos</name>
+              <email></email>
+	    </author>
+	  </authors>
+	  <component type="device" bom-ref="9e53e978-5883-4f64-bb57-8aa35cfd2081">
+	    <name>Snort</name>
+	    <version>3.0</version>
+	    <purl>pkg:supplier/Cisco/Snort@3.0</purl>
+	  </component>
+	  <manufacture>
+	    <name>Cisco</name>
+	    <url></url>
+	    <contact>
+              <name>Cisco</name>
+              <email></email>
+	    </contact>
+	  </manufacture>
+	  <supplier>
+	    <name>
+	      Cisco
+	    </name>
+	  </supplier>
+	</metadata>
+      <components>
+	<component type="library" bom-ref="088ad77f-305d-44b3-2881-821a8fdc5027">
+	  <publisher>LibDAQ</publisher>
+	  <name>LibDAQ</name>
+	  <version>3.0.3</version>
+	  <purl>pkg:supplier/LibDAQ/LibDAQ@3.0.3</purl>
+	</component>
+      	<component type="library" bom-ref="91790a06-f908-35ff-6049-e366116da164">
+	  <publisher>Doug Song</publisher>
+	  <name>libdnet</name>
+	  <version>1.14</version>
+	  <purl>pkg:supplier/Doug%20Song/libdnet@1.14</purl>
+	</component>
+      	<component type="library" bom-ref="35411975-b33e-7293-394c-7ef2206a5a6f">
+	  <publisher>OpenSSL</publisher>
+	  <name>OpenSSL</name>
+	  <version>1.1.1</version>
+	  <purl>pkg:supplier/OpenSSL/OpenSSL@1.1.1</purl>
+	</component>
+      	<component type="library" bom-ref="3cbbf4b9-f8e8-2d7d-ae09-4f220598ad36">
+	  <publisher>PCRE</publisher>
+	  <name>pcre2</name>
+	  <version>10.37</version>
+	  <purl>pkg:supplier/PCRE/pcre2@10.37</purl>
+	</component>
+      </components>
+<dependencies>
+<dependency ref="9e53e978-5883-4f64-bb57-8aa35cfd2081">
+  <dependency ref="088ad77f-305d-44b3-2881-821a8fdc5027"/>
+  <dependency ref="91790a06-f908-35ff-6049-e366116da164"/>
+  <dependency ref="35411975-b33e-7293-394c-7ef2206a5a6f"/>
+  <dependency ref="3cbbf4b9-f8e8-2d7d-ae09-4f220598ad36"/>
+</dependency>
+</dependencies>
+
+</bom>

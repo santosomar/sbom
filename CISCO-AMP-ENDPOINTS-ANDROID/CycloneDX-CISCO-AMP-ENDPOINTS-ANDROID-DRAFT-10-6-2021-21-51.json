@@ -1,0 +1,81 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.2",
+  "serialNumber": "urn:uuid:1ecf1de9-3bad-8cbd-f451-053220fbbc0a",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2021-06-11T01:35:00Z",
+    "authors": [
+      {
+        "name": "Omar Santos"
+      }
+    ],
+    "component": {
+      "type": "device",
+      "bom-ref": "24a36030-1f36-f9b7-e303-911ffd1756c3",
+      "name": "Cisco Secure Endpoints for Android",
+      "purl": "pkg:supplier/Cisco/Cisco%20Secure%20Endpoints%20for%20Android@2.1.0",
+      "supplier": {
+        "name": "Cisco"
+      },
+      "version": "2.1.0"
+    },
+    "manufacture": {
+      "name": "Cisco"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "c639e5f9-557d-e679-1a76-5f70c146fea1",
+      "name": "okhttp",
+      "purl": "pkg:supplier/Square/okhttp@ 4.2.2",
+      "publisher": "Square",
+      "version": " 4.2.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "81316144-6a5d-7c5d-fce5-d00d14a16a7c",
+      "name": "design ",
+      "purl": "pkg:supplier/design/design%20@2.0.3",
+      "publisher": "design",
+      "version": "2.0.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "d64804d5-18e5-24e8-89c3-7b886fad47d3",
+      "name": "bouncy-castle",
+      "purl": "pkg:supplier/Bouncy%20Castle/bouncy-castle@1.62.0",
+      "publisher": "Bouncy Castle",
+      "version": "1.62.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "ad911248-0914-a295-ed08-30de80fe87af",
+      "name": "xmlsec-java",
+      "purl": "pkg:supplier/Apache%20Santuario/xmlsec-java@2.1.4",
+      "publisher": "Apache Santuario",
+      "version": "2.1.4"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "13dcd859-e886-bfe3-f8b4-7eeb52737824",
+      "dependsOn": [
+        "c639e5f9-557d-e679-1a76-5f70c146fea1",
+        "81316144-6a5d-7c5d-fce5-d00d14a16a7c",
+        "d64804d5-18e5-24e8-89c3-7b886fad47d3",
+        "ad911248-0914-a295-ed08-30de80fe87af"
+      ]
+    },
+    {
+      "ref": "24a36030-1f36-f9b7-e303-911ffd1756c3",
+      "dependsOn": [
+        "c639e5f9-557d-e679-1a76-5f70c146fea1",
+        "81316144-6a5d-7c5d-fce5-d00d14a16a7c",
+        "d64804d5-18e5-24e8-89c3-7b886fad47d3",
+        "ad911248-0914-a295-ed08-30de80fe87af"
+      ]
+    }
+  ]
+}

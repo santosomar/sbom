@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<bom serialNumber="urn:uuid:1ecf1de9-3bad-8cbd-f451-053220fbbc0a" 
+version = "1" xmlns="http://cyclonedx.org/schema/bom/1.2">
+	<metadata>
+	  <timestamp>2021-06-11T01:35:00Z</timestamp>
+	  <authors>
+	    <author>
+              <name>Omar Santos</name>
+              <email></email>
+	    </author>
+	  </authors>
+	  <component type="device" bom-ref="24a36030-1f36-f9b7-e303-911ffd1756c3">
+	    <name>Cisco Secure Endpoints for Android</name>
+	    <version>2.1.0</version>
+	    <purl>pkg:supplier/Cisco/Cisco%20Secure%20Endpoints%20for%20Android@2.1.0</purl>
+	  </component>
+	  <manufacture>
+	    <name>Cisco</name>
+	    <url></url>
+	    <contact>
+              <name>Cisco</name>
+              <email></email>
+	    </contact>
+	  </manufacture>
+	  <supplier>
+	    <name>
+	      Cisco
+	    </name>
+	  </supplier>
+	</metadata>
+      <components>
+	<component type="library" bom-ref="c639e5f9-557d-e679-1a76-5f70c146fea1">
+	  <publisher>Square</publisher>
+	  <name>okhttp</name>
+	  <version> 4.2.2</version>
+	  <purl>pkg:supplier/Square/okhttp@ 4.2.2</purl>
+	</component>
+      	<component type="library" bom-ref="81316144-6a5d-7c5d-fce5-d00d14a16a7c">
+	  <publisher>design</publisher>
+	  <name>design </name>
+	  <version>2.0.3</version>
+	  <purl>pkg:supplier/design/design%20@2.0.3</purl>
+	</component>
+      	<component type="library" bom-ref="d64804d5-18e5-24e8-89c3-7b886fad47d3">
+	  <publisher>Bouncy Castle</publisher>
+	  <name>bouncy-castle</name>
+	  <version>1.62.0</version>
+	  <purl>pkg:supplier/Bouncy%20Castle/bouncy-castle@1.62.0</purl>
+	</component>
+      	<component type="library" bom-ref="ad911248-0914-a295-ed08-30de80fe87af">
+	  <publisher>Apache Santuario</publisher>
+	  <name>xmlsec-java</name>
+	  <version>2.1.4</version>
+	  <purl>pkg:supplier/Apache%20Santuario/xmlsec-java@2.1.4</purl>
+	</component>
+      </components>
+<dependencies>
+<dependency ref="24a36030-1f36-f9b7-e303-911ffd1756c3">
+  <dependency ref="c639e5f9-557d-e679-1a76-5f70c146fea1"/>
+  <dependency ref="81316144-6a5d-7c5d-fce5-d00d14a16a7c"/>
+  <dependency ref="d64804d5-18e5-24e8-89c3-7b886fad47d3"/>
+  <dependency ref="ad911248-0914-a295-ed08-30de80fe87af"/>
+</dependency>
+</dependencies>
+
+</bom>
